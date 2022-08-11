@@ -5,7 +5,7 @@ Device configuration for Vsmart Joy 3
 Basic   | Spec Sheet
 -------:|:-------------------------
 CPU     | Octa-core 1.8 GHz Cortex-A53
-CHIPSET | Qualcomm SDM632 Snapdragon 632
+Chipset | Qualcomm SDM632 Snapdragon 632
 GPU     | Adreno 506
 Memory  | 2GB , 3GB , 4GB
 Shipped Android Version | 9.0 (Pie)
@@ -27,11 +27,8 @@ Some [settings](https://github.com/hyperion70/twrp_device_vsmart_casuarina) are 
 Thanks to Fairphone 3 community for amazing work
 
 ### Current Status
-* It builds successfully. :heavy_check_mark:
 * Device boots. :heavy_check_mark:
-* Adb can be accessed ( but not during boot ). :heavy_check_mark:
-* Bootanimation is shown. :heavy_check_mark:
-* LineageOS is booting completely. :heavy_check_mark:
+* Adb can be accessed. :heavy_check_mark:
 * Working things after quick test:
   * Display / Touchscreen :heavy_check_mark:
   * RIL :heavy_check_mark:
