@@ -15,7 +15,7 @@
 #
 
 # Vendor blobs
-$(call inherit-product, vendor/fairphone/FP3/FP3-vendor.mk)
+$(call inherit-product, vendor/vsmart/casuarina/casuarina-vendor.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -28,35 +28,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl.recovery \
-    bootctrl.msm8953.recovery
-
-PRODUCT_PACKAGES += \
-    update_engine \
-    update_verifier \
-    bootctrl.msm8953 \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_HOST_PACKAGES += \
-    brillo_update_payload
-
-
-# Boot control HAL test app
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl \
-    update_engine_client
-
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
-    POSTINSTALL_OPTIONAL_system=true
-
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    update_engine_sideload
+# A/B related defines
+AB_OTA_UPDATER := false
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -64,8 +37,8 @@ PRODUCT_AAPT_PREF_CONFIG := 560dpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2160
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \

@@ -1,4 +1,5 @@
 # All unpinned blobs are extracted from FP3-REL-8901.4.A.0010-gms-f74c58a8-user
+# and from casuarina-V430A_OPN_U_B13_210315-user
 
 # System partition
 
@@ -705,6 +706,7 @@ vendor/etc/cacert_location.pem
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/csidtg_camera.xml
 vendor/etc/camera/csidtg_chromatix.xml
+vendor/etc/camera/gc2385_casuarina_chromatix.xml
 vendor/etc/camera/imx214_chromatix.xml
 vendor/etc/camera/imx230_chromatix.xml
 vendor/etc/camera/imx230_qc2002_chromatix.xml
@@ -741,12 +743,14 @@ vendor/etc/camera/ov5670_f5670bq_chromatix.xml
 vendor/etc/camera/ov5695_chromatix.xml
 vendor/etc/camera/ov7251_chromatix.xml
 vendor/etc/camera/ov8856_bear_chromatix.xml
+vendor/etc/camera/ov13850_q13v06k_chromatix.xml
 vendor/etc/camera/ov8856_chromatix.xml
 vendor/etc/camera/ov8858_chromatix.xml
 vendor/etc/camera/ov8865_chromatix.xml
 vendor/etc/camera/s5k2l7_8953_chromatix.xml
 vendor/etc/camera/s5k2l7_chromatix.xml
 vendor/etc/camera/s5k2l7sx_chromatix.xml
+vendor/etc/camera/s5k3l6_casuarina_chromatix.xml
 vendor/etc/camera/s5k3l8_chromatix.xml
 vendor/etc/camera/s5k3l8_f3l8yam_chromatix.xml
 vendor/etc/camera/s5k3l8_mono_chromatix.xml
@@ -758,8 +762,10 @@ vendor/etc/camera/s5k3p3sm_chromatix.xml
 vendor/etc/camera/s5k3p8sp_chromatix.xml
 vendor/etc/camera/s5k3p9sp_chromatix.xml
 vendor/etc/camera/s5k4h7yx_chromatix.xml
+vendor/etc/camera/s5k4h7yx_casuarina_chromatix.xml
 vendor/etc/camera/s5k5e9yu05_mono_chromatix.xml
 vendor/etc/camera/s5kgm1sp_chromatix.xml
+vendor/etc/camera/v430A_camera.xml
 
 # etc-cne
 vendor/etc/cne/mwqem.conf
@@ -892,6 +898,15 @@ vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/etc/xtra_root_cert.pem
 
 # firmware
+vendor/firmware/a225p5_pm4.fw
+vendor/firmware/a225_pfp.fw
+vendor/firmware/a225_pm4.fw
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
+vendor/firmware/a420_pfp.fw
+vendor/firmware/a420_pm4.fw
 vendor/firmware/a506_zap.b00
 vendor/firmware/a506_zap.b01
 vendor/firmware/a506_zap.b02
@@ -906,6 +921,8 @@ vendor/firmware/a530v2_seq.fw2
 vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 vendor/firmware/a540_gpmu.fw2
+vendor/firmware/a630_gmu.bin
+vendor/firmware/a630_sqe.fw
 vendor/firmware/aw8898_cfg.bin
 vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_12_0.fw
@@ -927,8 +944,26 @@ vendor/firmware/fingerprint.b04
 vendor/firmware/fingerprint.b05
 vendor/firmware/fingerprint.b06
 vendor/firmware/fingerprint.mdt
+vendor/firmware/fngap64.b00|EEBAB49ACB965CDF0A6F1E40D70BB931ABCD4439
+vendor/firmware/fngap64.b01|943AA39E2419D4E8FC55C06CB344E1A9957AEC4A
+vendor/firmware/fngap64.b02|76286532AD824B802F9B8F9038A8F037794307BF
+vendor/firmware/fngap64.b03|CB1D550DBBE57CE4E8A46943E036B689C51E4AD7
+vendor/firmware/fngap64.b04|32CB47D1EA47AFD3655DE516BE37056557B458AF
+vendor/firmware/fngap64.b05|5C911BFB16DF11B821FF3E0A79299E069F94894D
+vendor/firmware/fngap64.b06|2C3C77937F4443CD0C93B034731F3640EF3B31C5
+vendor/firmware/fngap64.mdt|9A005989AC7D71D4A15887D347464CAF096DC063
+vendor/firmware/leia_pfp_470.fw|46a8ce821d218359ff7e846db5dcc15b31bdd5ca
+vendor/firmware/leia_pm4_470.fw|99364b0afd94e496ccc833ca0424dd6853b971d5
 vendor/firmware/tas2557_uCDSP.bin
 vendor/firmware/tas2557evm_aacspk_a.ftcfg
+vendor/firmware/tzvin32.b00|56CEECC0EFDEE8699FF78081EC48DB4BEF2CF00C
+vendor/firmware/tzvin32.b01|F5AF591D7BDFEF986452DD039EB9282FEE5A2514
+vendor/firmware/tzvin32.b02|AF7450FD186916FC3E5EDD635DDAAA6B9F822069
+vendor/firmware/tzvin32.b03|D1210E2AD2EF819FC558073CD0513EB71C039CCD
+vendor/firmware/tzvin32.b04|95CE88A1B00D647B2E71B1DDEB207A4A317B41B0
+vendor/firmware/tzvin32.b05|60C61A8991F3088530AC7A3D8D960DAF04E9DFE8
+vendor/firmware/tzvin32.b06|9CBB5112FFB07F9C49DD1D9E216E234959CD5FBE
+vendor/firmware/tzvin32.mdt|708C8448C936A51A4F28B1B548273DF4C284B11A
 vendor/firmware/venus.b00
 vendor/firmware/venus.b01
 vendor/firmware/venus.b02
@@ -1038,6 +1073,7 @@ vendor/lib/libactuator_ak7374.so
 vendor/lib/libactuator_bu64244gwz.so
 vendor/lib/libactuator_bu64297.so
 vendor/lib/libactuator_dw9714.so
+vendor/lib/libactuator_dw9714_casuarina.so
 vendor/lib/libactuator_dw9716.so
 vendor/lib/libactuator_dw9718s.so
 vendor/lib/libactuator_dw9761b.so
@@ -1095,6 +1131,11 @@ vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
 vendor/lib/libchromatix_csidtg_preview.so
 vendor/lib/libchromatix_csidtg_zsl_preview.so
+vendor/lib/libchromatix_gc2385_casuarina_common.so
+vendor/lib/libchromatix_gc2385_casuarina_cpp_preview.so
+vendor/lib/libchromatix_gc2385_casuarina_postproc.so
+vendor/lib/libchromatix_gc2385_casuarina_snapshot.so
+vendor/lib/libchromatix_gc2385_casuarina_zsl_preview.so
 vendor/lib/libchromatix_imx214_4k_preview_lc898122.so
 vendor/lib/libchromatix_imx214_4k_video_lc898122.so
 vendor/lib/libchromatix_imx214_common.so
@@ -2082,6 +2123,30 @@ vendor/lib/libchromatix_ov8856_cpp_snapshot.so
 vendor/lib/libchromatix_ov8856_cpp_us_chromatix.so
 vendor/lib/libchromatix_ov8856_cpp_video.so
 vendor/lib/libchromatix_ov8856_default_video.so
+vendor/lib/libchromatix_ov8856_casuarina_a3_default_preview.so
+vendor/lib/libchromatix_ov8856_casuarina_a3_default_video.so
+vendor/lib/libchromatix_ov8856_casuarina_a3_hfr_60.so
+vendor/lib/libchromatix_ov8856_casuarina_a3_hfr_90.so
+vendor/lib/libchromatix_ov8856_casuarina_a3_hfr_120.so
+vendor/lib/libchromatix_ov8856_casuarina_common.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_ds_chromatix.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_hfr_60.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_hfr_90.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_hfr_120.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_liveshot.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_preview.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_snapshot.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_us_chromatix.so
+vendor/lib/libchromatix_ov8856_casuarina_cpp_video.so
+vendor/lib/libchromatix_ov8856_casuarina_hfr_60.so
+vendor/lib/libchromatix_ov8856_casuarina_hfr_90.so
+vendor/lib/libchromatix_ov8856_casuarina_hfr_120.so
+vendor/lib/libchromatix_ov8856_casuarina_liveshot.so
+vendor/lib/libchromatix_ov8856_casuarina_postproc.so
+vendor/lib/libchromatix_ov8856_casuarina_preview.so
+vendor/lib/libchromatix_ov8856_casuarina_snapshot.so
+vendor/lib/libchromatix_ov8856_casuarina_zsl_preview.so
+vendor/lib/libchromatix_ov8856_casuarina_zsl_video.so
 vendor/lib/libchromatix_ov8856_hfr_60.so
 vendor/lib/libchromatix_ov8856_hfr_90.so
 vendor/lib/libchromatix_ov8856_liveshot.so
@@ -2186,6 +2251,35 @@ vendor/lib/libchromatix_s5k2l7sx_video.so
 vendor/lib/libchromatix_s5k2l7sx_video_4k.so
 vendor/lib/libchromatix_s5k2l7sx_zsl_preview_3a.so
 vendor/lib/libchromatix_s5k2l7sx_zsl_video_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_common.so
+vendor/lib/libchromatix_s5k3l6_casuarina_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k3l6_casuarina_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k3l6_casuarina_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k3l6_casuarina_cpp_liveshot.so
+vendor/lib/libchromatix_s5k3l6_casuarina_cpp_preview.so
+vendor/lib/libchromatix_s5k3l6_casuarina_cpp_snapshot.so
+vendor/lib/libchromatix_s5k3l6_casuarina_cpp_video.so
+vendor/lib/libchromatix_s5k3l6_casuarina_default_preview_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_default_video.so
+vendor/lib/libchromatix_s5k3l6_casuarina_default_video_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_dualcamsnapshot.so
+vendor/lib/libchromatix_s5k3l6_casuarina_dualcam_zsl_preview_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_hfr_120.so
+vendor/lib/libchromatix_s5k3l6_casuarina_hfr_120_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_hfr_60.so
+vendor/lib/libchromatix_s5k3l6_casuarina_hfr_60_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_hfr_90.so
+vendor/lib/libchromatix_s5k3l6_casuarina_hfr_90_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_liveshot.so
+vendor/lib/libchromatix_s5k3l6_casuarina_lls2snapshot.so
+vendor/lib/libchromatix_s5k3l6_casuarina_lls2_zsl_preview_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_llssnapshot.so
+vendor/lib/libchromatix_s5k3l6_casuarina_lls_zsl_preview_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_postproc.so
+vendor/lib/libchromatix_s5k3l6_casuarina_preview.so
+vendor/lib/libchromatix_s5k3l6_casuarina_snapshot.so
+vendor/lib/libchromatix_s5k3l6_casuarina_zsl_preview_3a.so
+vendor/lib/libchromatix_s5k3l6_casuarina_zsl_video_3a.so
 vendor/lib/libchromatix_s5k3l8_common.so
 vendor/lib/libchromatix_s5k3l8_cpp_hfr_120.so
 vendor/lib/libchromatix_s5k3l8_cpp_hfr_60.so
@@ -2399,6 +2493,11 @@ vendor/lib/libchromatix_s5k4h7yx_sw_post_proc.so
 vendor/lib/libchromatix_s5k4h7yx_video_cpp.so
 vendor/lib/libchromatix_s5k4h7yx_zsl_preview_3a.so
 vendor/lib/libchromatix_s5k4h7yx_zsl_video_3a.so
+vendor/lib/libchromatix_s5k4h7yx_casuarina_a3_zsl_preview.so
+vendor/lib/libchromatix_s5k4h7yx_casuarina_common.so
+vendor/lib/libchromatix_s5k4h7yx_casuarina_cpp_snapshot.so
+vendor/lib/libchromatix_s5k4h7yx_casuarina_postproc.so
+vendor/lib/libchromatix_s5k4h7yx_casuarina_snapshot.so
 vendor/lib/libchromatix_s5k5e9yu05_mono_common.so
 vendor/lib/libchromatix_s5k5e9yu05_mono_cpp_hfr_120.so
 vendor/lib/libchromatix_s5k5e9yu05_mono_cpp_hfr_60.so
@@ -2538,6 +2637,8 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_imglib.so
+vendor/lib/libmmcamera_holitech_ov8856_casuarina_eeprom.so
+vendor/lib/libmmcamera_hongshi_s5k3l6_casuarina_eeprom.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
 vendor/lib/libmmcamera_imx214.so
 vendor/lib/libmmcamera_imx230.so
@@ -2622,6 +2723,7 @@ vendor/lib/libmmcamera_ov7251.so
 vendor/lib/libmmcamera_ov8856.so
 vendor/lib/libmmcamera_ov8856_2lane.so
 vendor/lib/libmmcamera_ov8856_4lane.so
+vendor/lib/libmmcamera_ov8856_4lane_casuarina.so
 vendor/lib/libmmcamera_ov8858.so
 vendor/lib/libmmcamera_ov8865.so
 vendor/lib/libmmcamera_paaf_lib.so
@@ -2645,6 +2747,7 @@ vendor/lib/libmmcamera_s5k3p3sm.so
 vendor/lib/libmmcamera_s5k3p8sp.so
 vendor/lib/libmmcamera_s5k3p9sp.so
 vendor/lib/libmmcamera_s5k3p9sp_p24c64e_eeprom.so
+vendor/lib/libmmcamera_s5k4h7yx_casuarina.so
 vendor/lib/libmmcamera_s5k4h7yx.so
 vendor/lib/libmmcamera_s5k5e9yu05.so
 vendor/lib/libmmcamera_s5kgm1sp.so
@@ -2671,6 +2774,7 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_truly_cma481_eeprom.so
 vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 vendor/lib/libmmcamera_tsp_imx486_fm24c64_eeprom.so
+vendor/lib/libmmcamera_tsp_s5k4h7_casuarina_eeprom.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmjpeg.so
