@@ -1,6 +1,6 @@
 # AUDIO
 # fluencetype can be "fluence" or "fluencepro" or "none"
-ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.sdk.fluencetype=none
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.fluence.speaker=true
@@ -55,14 +55,14 @@ persist.vendor.audio.hw.binder.size_kbyte=1024
 
 # Bluetooth
 ro.vendor.bluetooth.wipower=false
+vendor.qcom.bluetooth.soc=pronto
 
 # system props for the cne module
 persist.vendor.cne.feature=1
 
 # DRM
-ro.crypto.allow_encrypt_override=true
+ro.crypto.allow_encrypt_override=false
 ro.crypto.volume.filenames_mode=aes-256-cts
-drm.service.enabled=true
 
 # Factory reset partition
 ro.frp.pst=/dev/block/bootdevice/by-name/config

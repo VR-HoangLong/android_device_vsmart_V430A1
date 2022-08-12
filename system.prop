@@ -16,14 +16,12 @@ bluetooth.hfp.client=1
 ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Camera
-persist.vendor.camera.lib2d.rotation=on
-persist.vendor.camera.isp.clock.optmz=0
 persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
 # Expose aux camera for below packages
-# vendor.camera.aux.packagelist=org.codeaurora.snapcam
+vendor.camera.aux.packagelist=org.codeaurora.snapcam
 # Force HAL1 for below packages
-#vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk
+vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 # low power mode for camera
 vendor.camera.lowpower.record.enable=1
 
@@ -121,7 +119,7 @@ persist.rild.nitz_short_ons_3=""
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 telephony.lteOnCdmaDevice=1
-# Set network mode to (T/L/G/W/1X/EVDO, T/G/W/L) for 7+5 mode device on DSDS mode
+# Set network mode to (T/L/G/W/1X/EVDO, T/L/G/W/1X/EVDO) for 7+7 mode device on DSDS mode
 ro.telephony.default_network=20,20
 ro.vendor.use_data_netmgrd=true
 persist.vendor.data.mode=concurrent

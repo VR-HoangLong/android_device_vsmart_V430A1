@@ -221,10 +221,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 # Vendor Security Patch Level
 VENDOR_SECURITY_PATCH := "2022-04-05"
 
-# NFC
-BOARD_NFC_CHIPSET := pn553
-TARGET_USES_NQ_NFC := true
-
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
