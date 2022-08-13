@@ -33,7 +33,6 @@ Thanks to Fairphone 3 community for amazing work
   * Display / Touchscreen :heavy_check_mark:
   * RIL :heavy_check_mark:
   * Device encryption :heavy_check_mark:
-  * Fingerprint sensor :heavy_check_mark:
   * GPS :heavy_check_mark:
 
 ### Known Issues
@@ -42,6 +41,7 @@ These things are untested or known not to work:
 * Sound
 * Wi-Fi
 * Bluetooth
+* Fingerprint
 
 ### Kernel Source
 The kernel used is a prebuilt kernel, taken from V430A_OPN_U_B13_210315
